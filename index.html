@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="thief.png">
+    <title>Fraporitmos</title>
+    <link rel="stylesheet" href="flexboxgrid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e3cac9ba50.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	  <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+</head>
+
+<script type="text/javascript">
+    document.oncontextmenu = function(){return false;}
+    </script>
+
+<body>
+<!--Header-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
+    <div  style="margin:0; padding-top:0em;"  class="row">
+          <div style="margin:0; padding-left:2em;"  class=" he col-xs-9  col-lg-4 center-xs"  >
+                  <h1 class="titulo"  style="color: #fff;">Despega tu mente!</h1>
+                  <div class="head ">
+                      <span style="font-size: 1em; color: #000; ">
+                            <a  href=""  target="_blank" style='display:flex; align-items: center; justify-content:center; text-decoration:none;color:black; outline-style: none;' >
+                            <i class="fas fa-graduation-cap"></i>
+                             <p style="font-size:18px; margin-top:0.7em; margin-left:0.5em;" > Cursos </p>
+                            </a>
+                      </span>
+                      <span style="font-size: 1em; color: #000; ">
+                            <a  href="pages/es_blog.php"  target="_blank" style='display:flex; align-items: center; justify-content:center; text-decoration:none;color:black; outline-style: none;' >
+                            <i class="fas fa-rss"></i>
+                           <p style="font-size:18px; margin-top:0.7em; margin-left:0.5em;" > Blog </p>
+                            </a>
+                      </span>
+
+                      <span style="font-size: 1em; color: #000; ">
+                            <a  href=""  target="_blank" style='display:flex; align-items: center; justify-content:center; text-decoration:none;color:black; outline-style: none;' >
+                            <i class="fas fa-users"></i>
+                            <p style="font-size:18px; margin-top:0.7em; margin-left:0.5em;" > Comunidad </p>
+                            </a>
+                      </span>
+                      <span style="font-size: 1em; color: #000; ">
+                            <a  href=""  target="_blank" style='display:flex; align-items: center; justify-content:center; text-decoration:none;color:black; outline-style: none;' >
+                            <i class="fas fa-laptop-code"></i>
+                            <p style="font-size:18px; margin-top:0.7em; margin-left:0.5em;" > Servicios </p>
+                            </a>
+                      </span>
+                      <span style="font-size: 1em; color: #000; ">
+                            <a  href=""  target="_blank" style='display:flex; align-items: center; justify-content:center; text-decoration:none;color:black; outline-style: none;' >
+                            <i class="fas fa-project-diagram"></i>       
+                            <p style="font-size:18px; margin-top:0.7em; margin-left:0.5em;" > Proyectos </p>
+                            </a>
+                      </span>
+
+                  </div>
+          </div>
+          <div style="margin:0; padding:0em;"   class="he col-xs-2  col-lg-1 ">
+                 <div id="containerA">
+                </div>
+          </div>
+          <img style="margin:0; padding:0em;"  class="imagen col-lg-7  firs-xs" src="source/header.png" alt="">
+   </div>
+    <script>
+        var myAnim  = bodymovin.loadAnimation({
+        container: document.getElementById('containerA'),
+        path: 'nave.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+        });
+        LottieContainer.addEventListener('click', function() {
+        myAnim.play();
+        });
+     </script>
+    
+    <style>
+      
+      .head a:hover{
+        
+        border-radius: 10px;
+        color: rgb(251, 170, 1);
+        background: rgba(16, 80, 163, 0.164);
+      }
+     
+      .head{
+        background:rgba(1, 9, 29, 0.541);
+        border: 1px solid #fff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+     
+      @media only screen and (max-width: 995px) {
+        .imagen{
+              display:none;
+        }
+        .he{
+              padding-top:2em;
+        }
+      }
+    </style>
+
+<!--Banner-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
+    <nav class="bannerF">
+    <div style="padding-top:2em; margin:0;"  class="row middle-xs center-xs ">
+        <div class="center-xs col-xs-8 col-md-4 ">
+            <div id="containerAnim" >  
+            </div>
+        </div>
+        <h5 style="padding:1em; margin:0;"  class="banner col-xs-12 col-md-8 ">
+        Si alguna vez has pensado que no naciste para ser programador o fracasaste en algún proyecto de tu vida, respira por que "Todo el mundo puede codificar", en esta plataforma podrás encontrar algunos cursos gratuitos y proyectos que te pueden ayudar en tu proceso de desarrollador.  
+        <button type="button" style="width:50%; font-size:20px; margin-top:3em;"class="btn btn-primary">Leer más</button>    
+        </h5>
+      
+    </div>
+    </nav>
+
+    <script>
+        var myAnim  = bodymovin.loadAnimation({
+        container: document.getElementById('containerAnim'),
+        path: 'animation.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+        });
+        LottieContainer.addEventListener('click', function() {
+        myAnim.play();
+        });
+     </script>
+     <style>
+        .banner{
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+       
+     </style>
+
+<!--Cursos-->
+<h1 style="text-align:center;padding:1.5em; color:#fff;">Cursos</h1>
+
+<div class=" container">
+
+    <section class="main">
+        <ul class="ch-grid">
+            <li>
+                <div style="padding:0; margin:0;"  class="ch-item ch-img-1">
+                    <div class="ch-info">
+                        <h1>Curso de C++</h1>
+                        <p>Gratis<a style="text-decoration:none; outline-style:none; color:#fff;" href="http://drbl.in/eNXW">Ir al curso</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div style="padding:0; margin:0;"  class="ch-item ch-img-2">
+                    <div class="ch-info">
+                        <h1>Curso de Java</h1>
+                        <p>Gratis <a  style="text-decoration:none; outline-style:none; color:#fff;" href="http://drbl.in/eNXW">Ir al curso</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div style="padding:0; margin:0;"  class="ch-item ch-img-3">
+                    <div class="ch-info">
+                        <h1>Curso de php</h1>
+                        <p>Gratis <a  style="text-decoration:none; outline-style:none; color:#fff;" href="http://drbl.in/eNXY">Ir al curso</a></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div style="padding:0; margin:0;"  class="ch-item ch-img-4">
+                    <div class="ch-info">
+                        <h1>Curso de C#</h1>
+                        <p>Gratis <a  style="text-decoration:none; outline-style:none; color:#fff;" href="http://drbl.in/eNXY">Ir al curso</a></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </section>
+
+</div>
+<!--Post-->
+<h1 style="text-align:center;padding:1.5em; color:#fff; ">Blog</h1>
+
+<div  style="margin:0;" class="row around-xs ">
+      <div class="card mb-3 col-xs-11 " style="max-width: 540px;">
+              <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="source/jpa.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body ">
+                          <h4 class="card-title" style="color:#000;"> JPA Java</h4>
+                          <p style="font-size:18px;color:#000;"class="card-text">¿Has escuchado hablar sobre JPA? Java Persistence API es un framework de persistencia muy demandado en la actualidad, aquí te enseño tu primera crud desde cero.</p>
+                          <a href="#" style="font-size:15px;" class="btn btn-primary ">Leer post</a>
+                          <p style="font-size:15px;" class="card-text"><small class="text-muted">La semana pasada</small></p>
+                    </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="card mb-3 col-xs-11" style="max-width: 540px;">
+          <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="source/ui.png" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ">
+                      <h4 class="card-title"  style="color:#000;">UI en C/C++</h4>
+                      <p style="font-size:18px;color:#000;"class="card-text">Las ventanas emergentes en estos lenguajes son muy complejas ¿Como podemos crear un sistema que valga la pena con estos lenguajes? Mira como lo hago con la libreria WinApi.</p>
+                      <a href="#" style="font-size:15px;" class="btn btn-primary ">Leer post</a>
+                      <p style="font-size:15px;" class="card-text"><small class="text-muted">La semana pasada</small></p>
+                    </div>
+                </div>
+          </div>
+      </div>
+
+      <div class="card mb-3 col-xs-11" style="max-width: 540px;">
+          <div class="row no-gutters">
+                  <div class="col-md-4">
+                        <img src="source/bdd.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                        <div class="card-body ">
+                          <h4 class="card-title"  style="color:#000;">Normalizar una BDD</h4>
+                          <p style="font-size:18px;color:#000;"class="card-text">Muchos de los programadores cuando empezamos a realizar un software con base de datos imaginamos que ya lo sabemos todos, pero ¿En realidad sabemos diseñarlas?</p>
+                          <a href="#" style="font-size:15px;" class="btn btn-primary ">Leer post</a>
+                          <p style="font-size:15px;" class="card-text"><small class="text-muted">La semana pasada</small></p>
+                        </div>
+                  </div>
+          </div>
+      </div>
+
+</div>
+
+<!--Carrusel Game-->
+<h1 style="text-align:center;padding:1.5em; color:#fff;">Crea Videojuegos</h1>
+<div style="margin:0; " class="row">
+            <nav class="Carrusel col-md-6 col-xs-12 ">
+                <div id="carouselExampleCaptions1" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions1" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions1" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000">
+                    <img src="source/thanos1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio motor de juegos 3D</h5>
+                    <p>Crea tu propio moto de videojuegos con C++</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000" >
+                    <img src="source/thanos2.png"  class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio motor de videojuegos 3D</h5>
+            
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                    <img src="source/dragon2.png"  class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio motor de videojuegos 3D</h5>
+                
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                    <img src="source/dragon1.png"  class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio motor de videojuegos 3D</h5>
+            
+                    </div>
+                    </div>
+
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </nav>
+    
+
+   
+            <nav class="Carrusel col-md-6 col-xs-12 ">
+                <div id="carouselExampleCaptions2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions2" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="3000">
+                    <img src="source/ciudad1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio juego en tercera dimensión.</h5>
+                    <p>Crea videojuegos 3D con openGl y c++</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000" >
+                    <img src="source/ciudad2.png"  class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio juego en tercera dimensión.</h5>
+            
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                    <img src="source/ciudad3.png"  class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Tu propio juego en tercera dimensión.</h5>
+                
+                    </div>
+                    </div>
+                  
+
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </nav>   
+</div>
+
+<!--Service-->
+<h1 style="text-align:center;padding-top:1.5em; color:#fff;">Servicios</h1>
+    <div style="margin:0;" class="row middle-xs ">
+        <div class="col-xs-12 col-md-5">
+            <div id="containerSer" >  
+            </div>
+        </div>
+        <h5  class="banner col-xs-12 col-md-7 ">
+        Desarrollo profesional de aplicaciones Web, Móvil y de Escritorio con sofisticadas tecnologias de la información para aumentar los ingresos de tu empresa.
+        <button type="button" style="width:40%; font-size:20px; margin-top:3em;"class="btn btn-primary">Contacto</button>    
+        </h5>
+    </div>
+
+    <script>
+        var myAnim  = bodymovin.loadAnimation({
+        container: document.getElementById('containerSer'),
+        path: 'service.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+        });
+        LottieContainer.addEventListener('click', function() {
+        myAnim.play();
+        });
+     </script>
+     <style>
+
+     </style>
+     
+<!--Footer-->
+<h1 style="text-align:center;padding:1.5em; color:#fff;">Enlaces</h1>
+<div style="margin:0;" class="row center-xs">
+      <span class="item-f col-xs-12 col-sm-1" style="font-size: 2em; color: #000;">
+        <a href="https://web.facebook.com/FrapomcDobleH247"  target="_blank"  style='text-decoration:none;color:black; outline-style: none;' >
+            <i class="fab fa-facebook"></i>          
+        </a>
+      </span>
+
+      <span class="item-f col-xs-12 col-sm-1" style="font-size: 2em; color: #000;">
+        <a href="https://www.instagram.com/frapo247hh/?hl=es-la"  target="_blank" style='text-decoration:none;color:black; outline-style: none;' >
+            <i class="fab fa-instagram-square"></i>      
+        </a>
+      </span>
+
+      <span class="item-f col-xs-12 col-sm-1" style="font-size: 2em; color: #000;">
+        <a href="https://www.youtube.com/channel/UCYp5KKC8OUIS_CwbNwZeYbA?view_as=subscriber"  target="_blank" style='text-decoration:none;color:black; outline-style: none;' >
+            <i class="fab fa-youtube"></i>
+        </a>
+      </span>
+
+      <span class="item-f col-xs-12 col-sm-1" style="font-size: 2em; color: #000;">
+      <a href="https://github.com/FrapoDeveloper"  target="_blank" style='text-decoration:none;color:black; outline-style: none;' >
+            <i class="fab fa-github"></i>
+      </a>
+      </span>
+
+</div>
+<p style="margin-top:2em; text-align:center; font-size:18px;">Copyright © 2020 Copyright fraporitmos.com All Rights Reserved.</p>
+<style>
+    .item-f:hover{
+        background: rgba(16, 80, 163, 0.164);
+        border-radius: 20px;
+    }
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<style>
+body{
+  background-image: url(fondoWeb.png);
+}
+</style>

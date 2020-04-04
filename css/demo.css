@@ -1,0 +1,16 @@
+body{
+	font-family: Cambria, Georgia, serif;
+	background: #f9f9f9 url(../images/bg.jpg);
+
+}
+.container{
+	width: 100%;
+}
+.main{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
